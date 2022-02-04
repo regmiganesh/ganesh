@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background:#000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+.logo img{
+    width: 100%;
+    height: 10vh;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0 2rem 0 0;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(50, 248, 99);
+}
+.menu{
+    display: none;
+    color: #fff;
+    align-items: center;
+}
+.menu .fa{
+    font-size: 1rem;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px) {
+    nav .navigation{
+        position: absolute;
+        flex-direction: column;
+        background: #349197;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: -350px;
+        width: 100%;
+        height: 50vh;
+        text-align: center; 
+        transition: 2s ease-in-out;
+      
+    }
+    header{
+      z-index: 9999;
+    }
+    nav .navigation li {
+        margin: 1rem 0  0 0;
+        background-color: #000000;
+        width: 30%;
+        padding: 0.8rem;
+        
+    }
+    nav .navigation li a{
+       font-size: 0.8rem;
+    }
+    .navigation{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin-right: 1rem;
+        z-index: 999;
+    }
+    .menu .fa{
+        font-size: 2.6rem;
+        cursor: pointer;
+    }
+}
+
+.font-page{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .title-page{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .word{
+    padding: 2rem;
+  }
+  .word h1{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+  .first-span{
+    color: #0ce7f7;
+  }
+  .first-btn{
+   
+    padding: 0.5rem;
+    margin: 0.5rem 0 0 0;
+    outline: none;
+    cursor: pointer;
+    width: 8rem;
+    border: 0.1rem solid aqua;
+    background:transparent;
+    color: aqua;
+    border-radius:0.7rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+   
+  }
+  .image-section{
+
+    width: 50%;
+
+  }
+  .image-section img{
+   width: 100%;
+   height:90vh ;
+  
+  }
+  @media only screen and (max-width:480px){
+    .font-page{
+      padding: 1rem;
+      flex-direction: column-reverse;
+      height: 110vh;
+      padding: 0;
+    }
+    .image-section{
+      width: 100%;
+      height: 55vh;
+      
+    }
+    .image-section img{
+      height: 50vh;
+      width: 100%;
+    }
+    .title-page{
+      width: 100%;
+      height: 55vh;
+    }
+  }
+  /*about section*/
+  .About{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 5rem 1rem 5rem;   
+    }
+  
+  .title h1{
+   color:aqua
+   
+  }
+  .image-for-about img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 50%;
+  
+  }
+  article{
+    padding: 0.5rem;
+    text-align: justify;
+  
+  }
+  article p{
+    font-weight: 100;
+    color: #ffffff;
+    word-spacing: 0.2rem;
+    margin:2rem 0 0 0;
+  }
+  @media only screen and (max-width:768px){
+    .About{
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    article{
+      padding: 0.3rem;
+    }
+    article p{
+      margin: 0 0 0 0;
+      text-align: start;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+    }
+  }
+  @media only screen and (max-width:480px){
+   .About{
+     width: 100%;
+     padding: 0 0 0 0 ;
+     height: 130vh;
+     
+   }
+    .title{
+      width: 100%;
+     
+    }
+    article{
+      padding: 1rem;
+    }
+    article p{
+      margin: 0 0 0 0;
+      text-align: start;
+    }
+  }
+  /** product css**/
+  .product-section{
+    height: 120vh;
+    width: 100%;
+    background-color: #000;
+  }
+  .product-title{
+    padding: 1rem;
+    color: #0ce7f7;
+  }
+  .product{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 7rem;
+  }
+  .product-item{
+    box-shadow: 1px 1px 1px 0px aqua;
+    margin: 0 1rem 0 0;
+    padding: 0.3rem;
+  }
+  small{
+    color: #0ce7f7;
+    font-size: 1.2rem;
+  }
+  .checked {
+    color: orange;
+  }
+  .product-item button{
+    padding: 0.5rem;
+    margin: 0.5rem 0 0 0;
+    outline: none;
+    cursor: pointer;
+    width: 8rem;
+    border: 0.1rem solid aqua;
+    background:transparent;
+    color: aqua;
+    border-radius:0.7rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .product-item button:hover{
+    background-color:#0ce7f7;
+    color: #000;
+    transition: 2s ease-in-out;
+  }
+  .product-item p{
+    color: #fff;
+    margin:0.5rem 0  0 0;
+  }
+  .product-item img{
+    width: 100%;
+    height: 50vh;
+  }
+  @media only screen and (max-width:768px){
+    .product-section{
+      height: auto;
+  
+    }
+    .product{
+      flex-direction:column;
+    }
+  }
+  @media only screen and (max-width:480px){
+    .product{
+      padding: 0.5rem;
+    }
+    .product-item{
+      padding: 0.5rem;
+      width: 100%;
+    }
+  }
+  /* css for contact*/
+  .contact-us{
+    height: 90vh;
+    width: 100%;
+    background: #000;
+  }
+  .con{
+    display: flex;
+    justify-content: center;
+  }
+  .con h1{
+    color: #0ce7f7;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  label{
+    color:aqua;
+    margin:0.2rem 0; 
+  
+  }
+  form{
+    height: 70vh;
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+  }
+  input[type="text"]{
+    padding:0.5rem;
+    height: 9vh;
+    outline: none;
+    border: 0.1rem solid aqua;
+    background: transparent;
+    border-radius: 0.5rem;
+    caret-color: aqua;
+    color: aqua;
+  
+  }
+  input[type="e-mail"]{
+    padding:0.5rem;
+    height: 9vh;
+    outline: none;
+    border: 0.1rem solid aqua;
+    background: transparent;
+    border-radius: 0.5rem;
+    caret-color: aqua;
+    color: aqua;
+  }
+  textarea{
+    padding: 0.5rem;
+    margin: 0.5rem 0 0 0;
+    height:40vh;
+    outline: none;
+    border: 0.1rem solid aqua;
+    background: transparent;
+    border-radius: 0.5rem;
+    caret-color: aqua;
+    color: aqua;
+  }
+  input[type="submit"]{
+    padding:0.6rem;
+    margin: 0.5rem 0 0 0;
+    outline: none;
+    width: 20%;
+    border: 0.1rem solid aqua;
+    background: transparent;
+    border-radius: 0.5rem;
+    caret-color: aqua;
+    color: aqua;
+    cursor: pointer;
+  
+  }
+  
+  @media only screen and (max-width:480px){
+    form{
+      width: 100%;
+      margin-top: 4rem;
+    }
+    .con h1{
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+    .contact-us{
+      height: 100vh;
+      padding: 0.3rem;
+    }
+    input[type="submit"]{
+      width:auto;
+    }
+  }
+  /*Footer css*/
+  footer{
+    height: 40vh;
+    width: 100%;
+    background: #000;
+  }
+  .main-footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer h1{
+    color: #0ce7f7;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .social-media{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem 1rem;
+   height: 20vh;
+   width: 33%;
+  }
+  .link{
+    width: 36%;
+    height: 20vh;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .footer-list{
+    list-style-type:none;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+  .footer-list a{
+    text-decoration: none;
+    color: #0ce7f7;
+  }
+  .social-media li{
+    list-style-type:none;
+    margin: 0 1rem 0 0;
+  }
+  .social-media li a{
+    text-decoration:none;
+    color: #0ce7f7;
+  }
+  .adress .fa{
+    color: #0ce7f7;
+    margin: 0 0 0 0.5rem;
+  }
+  @media only screen and (max-width:768px){
+    .link{
+      width: auto;
+    }
+    .social-media{
+      width: auto;
+    }
+  }
+  @media only screen and (max-width:480px){
+    footer{
+      height: 50vh;
+    }
+    .main-footer-content{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+    .social-media{
+      height: 15vh;
+    }
+      .link{
+      height: 15vh;
+      display: block;
+    }
+    .footer-list{
+      margin: 0.3rem 0;
+    }
+  }
